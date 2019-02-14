@@ -1,0 +1,20 @@
+10: Total time for insertion is 0.030000 ms.
+10: Total time for sorting is 0.001000 ms.
+10: Approx. Stack Space consumed during the sort is 132.
+
+100: Total time for insertion is 0.073000 ms.
+100: Total time for sorting is 0.056000 ms.
+100: Approx. Stack Space consumed during the sort is 1604.
+
+1000: Total time for insertion is 0.960000 ms.
+1000: Total time for sorting is 7.209000 ms.
+1000: Approx. Stack Space consumed during the sort is 16004.
+
+10000: Total time for insertion is 9.799000 ms.
+10000: Total time for sorting is 282.614000 ms.
+10000: Approx. Stack Space consumed during the sort is 160004.
+
+100000: Total time for insertion is 31.702000 ms.
+100000: Total time for sorting is 29111.983000 ms.
+100000: Approx. Stack Space consumed during the sort is 1600004.
+
