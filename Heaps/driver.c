@@ -15,9 +15,10 @@ int main(int argc, char *argv[]){
 		return -1;
 	}
 	int arr[MAX_SIZE];
-	int i=0;
+	int i=1;
 	while(i<MAX_SIZE && fscanf(fptr,"%d",&arr[i]) == 1)
 		i++;
+	i--;
 	printArr(arr,i);
 	heapSort(arr,i);
 	printArr(arr,i);
