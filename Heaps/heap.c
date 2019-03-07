@@ -22,7 +22,7 @@ int right(heap hp, int i){
 }
 
 int get(heap hp,int i){
-	if(i>=0 && i<hp.len) 	return hp.h[i]; 
+	if(i>0 && i<=hp.len) 	return hp.h[i]; 
 	else					return INT_MIN;
 }
 
@@ -46,8 +46,8 @@ heap build_max_heap(int *arr, int size){
 	heap h;
 	h.len = size;
 	h.h = arr;
-	int last_parent = (size/2)-1;
-	for(int i=last_parent;i>=0;i--){
+	int last_parent = (size/2);
+	for(int i=last_parent;i>0;i--){
 		max_heapify(h,i);
 	}
 	return h;
@@ -59,19 +59,19 @@ void heapSort(int *arr, int size){
 	heap h = build_max_heap(arr,size);
 	while(h.len > 1){
 		//swap the root with the last element of the array
-		int tmp = h.h[h.len - 1];
-		h.h[h.len - 1] = h.h[0];
-		h.h[0] = tmp;
+		int tmp = h.h[h.len];
+		h.h[h.len] = h.h[1];
+		h.h[1] = tmp;
 		//decrease the heap size
 		(h.len)--;
 		//call the max_heapify on the new node
-		max_heapify(h,0);
+		max_heapify(h,1);
 	}
 	
 }
 
 void printArr(int *arr, int size){
-	for(int i = 0; i<size; i++){
+	for(int i = 1; i<=size; i++){
 		printf("%d ",arr[i]);
 	}
 	printf("\n");
